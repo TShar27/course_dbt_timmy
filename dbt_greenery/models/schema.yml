@@ -1,0 +1,98 @@
+
+version: 2
+
+models:
+  - name: my_first_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: stg_addresses
+    description: Contains user address data
+    columns:
+      - name: address_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: stg_events
+    description: Contains user activity on website
+    columns:
+      - name: event_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        description: "foreign key"
+        tests:
+          - not_null
+  - name: stg_order_items
+    description: Contains id's and quantity or orders
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: product_id
+        description: "foreign key"
+        tests:
+          - not_null    
+  - name: stg_orders
+    description: Holds all order information 
+    columns:
+      - name: order_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        description: "foreign key"
+        tests:
+          - not_null
+      - name: address_id
+        description: "foreign key"
+        tests:
+          - not_null          
+  - name: stg_products
+    description: Contains basic product information
+    columns:
+      - name: product_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null                
+  - name: stg_promos
+    description: Shows different types of promotions
+    columns:
+      - name: promo_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+  - name: stg_users
+    description: Contains basic user info 
+    columns:
+      - name: user_id
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null 
+      - name: address_id
+        description: "foreign key"
+        tests:
+          - not_null                                        
