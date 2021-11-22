@@ -17,5 +17,5 @@ SELECT
 FROM
     {{source('tutorial','orders')}}
 
-select * from orders limit 100;
+
 
