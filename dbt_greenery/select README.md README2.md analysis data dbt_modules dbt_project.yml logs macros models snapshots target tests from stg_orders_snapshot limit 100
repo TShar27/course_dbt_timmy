@@ -1,0 +1,14 @@
+ id |               user_id                | first_name | last_name |           email           | phone_number |     created_at      |     updated_at      |              address_id              
+----+--------------------------------------+------------+-----------+---------------------------+--------------+---------------------+---------------------+--------------------------------------
+  1 | bbe51ac6-6687-4cbe-9178-27d96f90836b | Keslie     | Hearmon   | khearmon0@netvibes.com    | 831-155-1615 | 2020-10-23 20:21:57 | 2021-01-30 22:49:31 | 7a4821e6-4e7a-4894-bb35-70ffcf0c3aa8
+  2 | eb8ac155-9558-47a2-ad5d-3a2518ec563c | Gerhard    | Kernan    | gkernan1@51.la            | 879-706-2066 | 2020-09-24 05:33:20 | 2020-10-10 06:11:13 | dd1048ba-46a5-4d80-a7e1-b1592c161a4c
+  3 | 7091fe90-07da-424c-8da6-24e024503be2 | Edithe     | Petricek  | epetricek2@purevolume.com | 407-316-0158 | 2020-02-20 05:46:49 | 2020-05-13 08:09:47 | 4a9bcc05-a07b-4507-9d42-a2325a4844fa
+  4 | ab21c3fa-34c7-4858-bee5-193775913caf | Danella    | Wrankmore | dwrankmore3@europa.eu     | 118-153-0530 | 2020-04-01 11:01:25 | 2020-04-01 12:19:52 | 6b49d7c6-6ede-4a8a-ade1-ec5888c7ce14
+  5 | d055abf7-ba8e-463b-975a-c5cb10f6d8eb | Timoteo    | Labrenz   | tlabrenz4@cisco.com       | 688-300-9734 | 2020-04-28 14:30:38 | 2020-06-03 15:22:21 | ed96dbd0-193e-4906-ae8b-904f50bcb57a
+  6 | 8ac6bb3e-7dc0-4cdb-90f2-a31db50547db | Lorelle    | Diego     | ldiego5@nps.gov           | 793-208-7745 | 2020-03-06 03:49:34 | 2020-05-06 06:16:01 | b2b4d6cd-3c94-40e0-99aa-9dd9ba011ca6
+  7 | 393de08c-725c-457a-a591-16030480eb80 | Reg        | Harrop    | rharrop6@naver.com        | 215-651-1811 | 2020-12-18 10:25:20 | 2021-01-19 10:53:15 | 96a40097-0030-4509-bb52-b3251fdef2b6
+  8 | 7f7ce164-75dd-4d50-ad3f-e4d8846f3d60 | Betsey     | Mylan     | bmylan7@cbslocal.com      | 939-834-5989 | 2020-12-02 12:13:33 | 2021-01-31 14:35:02 | 131db634-55f8-4fb6-98f3-624ec32a94b8
+  9 | 467a047e-c8df-4304-8fc9-949acd7bcf4a | Maris      | Sperski   | msperski8@comsenz.com     | 577-779-1973 | 2020-03-29 14:50:21 | 2020-05-12 17:19:14 | 1a61a755-cf38-43cd-be0d-7babfe8aaa26
+ 10 | 9208a361-ea2f-4f75-a2b4-281b55df08a9 | Johnath    | Oliva     | joliva9@taobao.com        | 498-625-6452 | 2020-02-11 20:00:29 | 2020-04-08 20:11:54 | 76f13d82-1273-4144-8a41-45fc836c3540
+(10 rows)
+
