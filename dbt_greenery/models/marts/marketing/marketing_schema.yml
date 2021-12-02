@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: fct_user_orders
+    description: "Contains order information at the user level"
+    columns:
+      - name: user_id
+        description: primary key
+        tests: 
+          - unique
+          - not_null
+        relationships:
+          to: ref('dim_users')
+          field: user_id
+      - name: num_orders  
+        description: "Total orders placed from user"
+        tests:
+          - positive_values
+      

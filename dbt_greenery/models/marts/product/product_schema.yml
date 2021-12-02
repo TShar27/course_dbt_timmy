@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: dim_events
+    description: "Contains page view events from the events data"
+    columns:
+      - name: event_id
+        description: primary key
+        tests: 
+          - not_null
+          - unique
+        relationships:
+          to: ref('stg_events')
+          field: event_id
+  - name: int_pageviews
+    description: "Contains aggreated count of events data"
+    columns:
+      - name: session_id
+        description: primary_key
+        tests: 
+          - not_null
+      - name: user_guid
+        tests: 
+          - not_null
+        relationships: 
+          to: ref('stg_users')
+          field: user_id
+      
