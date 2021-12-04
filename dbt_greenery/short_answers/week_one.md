@@ -1,12 +1,12 @@
-## Question 1) How many users do we have?
+# Question 1) How many users do we have?
 ```sql
 SELECT
     Count(DISTINCT(user_id))
 FROM users;
 ```
-# Answer: 130 Users 
+## Answer: 130 Users 
 
-## Question 2) On average, how many orders do we receive per hour?
+# Question 2) On average, how many orders do we receive per hour?
 ```sql
 with data as(SELECT 
     date_trunc('hour',created_at) as hour,
@@ -19,9 +19,9 @@ avg(orders) as avg_num_of_orders_per_hour
 FROM
     data;
 ```
-#  Answer: ~ 8 orders
+## Answer: ~ 8 orders
 
-## Question 3) On average, how long does an order take from being placed to delivered?
+# Question 3) On average, how long does an order take from being placed to delivered?
 ```sql
 with delivery_time as (
     SELECT 
@@ -33,9 +33,9 @@ with delivery_time as (
     FROM
         delivery_time
 ```
-#  Answer: 3 days 22 hours
+##  Answer: 3 days 22 hours
 
-## Question 4) How many users have made 1 purchase? Two purchases? Three + purchases?
+# Question 4) How many users have made 1 purchase? Two purchases? Three + purchases?
 ```sql
 with purchases as (SELECT 
     user_id,
@@ -56,11 +56,11 @@ FROM
 GROUP BY 1
 ORDER BY 1
 ```
-# Answer: 1-25
-#         2-22
-#         3+-81
+## Answer: 1-25
+##        2-22
+##         3+-81
 
-## Question 5) On average, how many unique sessions do we have per hour?
+# Question 5) On average, how many unique sessions do we have per hour?
 
 ```sql
 WITH sessions AS (SELECT
@@ -74,4 +74,4 @@ SELECT
 FROM 
     sessions
 ```
-# Answer: ~7.39 
+## Answer: ~7.39 

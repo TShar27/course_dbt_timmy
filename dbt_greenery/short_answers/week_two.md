@@ -1,4 +1,4 @@
-## Questions Week 2
+# Questions Week 2
 
 # What is our user repeat rate?
 
@@ -14,4 +14,4 @@ SELECT
 FROM
     data
 ```
-# Answer: 79.84%
+## Answer: 79.84%
