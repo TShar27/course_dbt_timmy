@@ -10,7 +10,7 @@ SELECT
 FROM
     dbt_timmy_shar.fct_user_orders)
 SELECT 
-(1.0* repeat_customers/total_shoppers)*100 AS repeat_rate_pct
+ROUND((1.0* repeat_customers/total_shoppers)*100,2) AS repeat_rate_pct
 FROM
     data
 ```

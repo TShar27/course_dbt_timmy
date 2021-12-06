@@ -5,6 +5,7 @@
 SELECT 
     o.order_id,
     user_id,
+    p.product_id,
     created_at AS created_at_utc,
     order_cost,
     shipping_cost,
@@ -22,4 +23,4 @@ JOIN {{ref('stg_order_items')}} as oi
 JOIN {{ref('stg_products')}} p 
     ON p.product_id = oi.product_id
 
-GROUP BY 1,2,3,4,5,6,7,8,9,10,11
+GROUP BY 1,2,3,4,5,6,7,8,9,10,11,12
