@@ -1,16 +1,12 @@
 # What is the overall conversion rate?
 ```sql
-WITH data as
-(SELECT 
-    SUM(total_views) as total_views,
-    SUM(count_checkout) as total_purchases
-FROM dbt_timmy_shar.fct_page_views)
-SELECT
-    ROUND((total_purchases/total_views) * 100,2) as overall_conversion_rate_pct
+{{sessions_with_checkout()}} -- macro I created (acts as a snippet) Can view in macros folder
+SELECT 
+    SUM(has_checkout)::numeric/COUNT(session_id) AS conv_rate
 FROM
-    data
+    sessions_with_checkout
 ```
-## Answer 11.92%
+## Answer 36.10%
 
 # What is the conversion rate by product? 
 
@@ -57,7 +53,7 @@ JOIN {{ref('int_checkout')}} c
 GROUP BY 1
 ```
 
-## I get much higher conversion rates per product so I know im not doing something exactly right. Am trying to figure out where my mistep was. 
+## full list of all loan products and their conversion rates :)
 
 
 

@@ -12,7 +12,8 @@ models:
         relationships:
           to: ref('stg_events')
           field: event_id
-  - name: int_pageviews
+
+  - name: fct_page_views
     description: "Contains aggreated count of events data"
     columns:
       - name: session_id
@@ -25,4 +26,10 @@ models:
         relationships: 
           to: ref('stg_users')
           field: user_id
+
+  - name: int_session
+    description: "intermediate model containing session_id and prodcut_id"
+  
+  - name: int_check_out 
+    description: "intermediate model aggregating if a session has a checkout or not"
       
