@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+  - name: Product Funnel by date
+    description: >
+      General Greenery funnel 
+    type: dashboard
+    maturity: low
+
+    owner:
+      name: Timmy Shar
+      email: Timshar27@gmail.com
+    depends_on:
+      - ref('dim_events')
+
+    
