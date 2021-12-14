@@ -23,9 +23,10 @@ WITH sessions AS(
         sessions
     GROUP BY 1
     ORDER BY 1
-    ```
 
-## Reflection Questions
+```
+
+# Reflection Questions
 
 My team currently uses dbt. After learning about the use cases of macos,I would recoomend my team take more advantage of their functionality. I also think that my team could implement more testing on our current models that were tied to an alerting system. Right now, we have so much legcay code that hold us back from utilizing the full powers of dbt. 
 I was able to see that in full effect after my experience in this course. 
